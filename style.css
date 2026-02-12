@@ -19,7 +19,7 @@ h1 {
 }
 
 .button {
-  background-color: #04AA6D;
+  background-color: #ff4d6d;
   border: none;
   color: white;
   padding: 64px 100px;
@@ -52,13 +52,13 @@ h1 {
   left: 100%;
 }
 .yes {
-  background-color: #ff4d6d;
+  background-color: #04AA6D;
   position: relative;
   overflow: hidden;
 }
 
 .yes:hover {
-  box-shadow: 0 0 20px #ff4d6d,
+  box-shadow: 0 0 20px #04AA6D,
               0 0 40px #ff85a1,
               0 0 60px #ffb3c6;
   transform: scale(1.1);
