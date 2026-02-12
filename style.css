@@ -19,6 +19,9 @@ h1 {
 }
 
 .love-glow {
+  display: inline-block; 
+  padding: 8px 18px;       
+  border-radius: 12px;     
   color: white;
   font-size: 36px;
   text-align: center;
@@ -30,11 +33,11 @@ h1 {
     0 0 40px #ff1177,
     0 0 80px #ff1177;
 
-  animation: glowPulse 2s infinite alternate;
+  animation: loveGlowPulse 2s infinite alternate;
 }
 
 /* Soft pulsing animation */
-@keyframes glowPulse {
+@keyframes loveGlowPulse {
   from {
     text-shadow:
       0 0 5px #ffffff,
