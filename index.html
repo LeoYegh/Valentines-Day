@@ -5,27 +5,6 @@
   <link rel="stylesheet" href="style.css">
 </head>
   
-<script>
-const noBtn = document.getElementById("noBtn");
-
-noBtn.addEventListener("mouseover", function () {
-
-    // Get screen limits
-    const maxX = window.innerWidth - noBtn.offsetWidth;
-    const maxY = window.innerHeight - noBtn.offsetHeight;
-
-    // Random position
-    const randomX = Math.random() * maxX;
-    const randomY = Math.random() * maxY;
-
-    // Move button
-    noBtn.style.position = "absolute";
-    noBtn.style.left = randomX + "px";
-    noBtn.style.top = randomY + "px";
-});
-</script>
-
-
 <body>
   <header>
     <h1>WILL YOU BE MY VALENTINE?!?!?!</h1>
@@ -40,5 +19,25 @@ noBtn.addEventListener("mouseover", function () {
              id="noBtn">
     </h2>
   </header>
+  
+  <script>
+    const noBtn = document.getElementById("noBtn");
+    
+    noBtn.addEventListener("mouseover", function () {
+    
+        // Get screen limits
+        const maxX = window.innerWidth - noBtn.offsetWidth;
+        const maxY = window.innerHeight - noBtn.offsetHeight;
+    
+        // Random position
+        const randomX = Math.random() * maxX;
+        const randomY = Math.random() * maxY;
+    
+        // Move button
+        noBtn.style.position = "absolute";
+        noBtn.style.left = randomX + "px";
+        noBtn.style.top = randomY + "px";
+    });
+</script>
 </body>
 </html>
