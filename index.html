@@ -12,13 +12,42 @@
     <img src="images/BeautifulGirl.jpeg" alt="Description of the image" width="460" height="345">
 
     <h2>
-      <input type="button" class="button yes" value="Yes">
+      <input type="button" class="button yes" value="Yes" id="yesBtn">
       <input type="button"
              class="button no"
              value="No"
              id="noBtn">
     </h2>
   </header>
+  
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<script>
+  const yesBtn = document.getElementById("yesBtn");
+
+  yesBtn.addEventListener("click", () => {
+    // confetti burst
+    confetti({
+      particleCount: 180,
+      spread: 80,
+      origin: { y: 0.65 }
+    });
+
+    // a second smaller burst for extra drama
+    setTimeout(() => {
+      confetti({
+        particleCount: 120,
+        spread: 120,
+        origin: { y: 0.6 }
+      });
+    }, 250);
+
+    // redirect to your next page
+    setTimeout(() => {
+      window.location.href = "ReasonsToLove.html"; // change to your page name
+    }, 900);
+  });
+</script>
   
   <script>
     const noBtn = document.getElementById("noBtn");
