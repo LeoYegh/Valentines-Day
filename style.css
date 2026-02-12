@@ -85,3 +85,7 @@ h1 {
 .yes:hover {
   animation: glowPulse 1.5s infinite alternate;
 }
+
+.no {
+  transition: 0.15s ease;
+}
