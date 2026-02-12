@@ -4,6 +4,27 @@
   <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+  
+<script>
+const noBtn = document.getElementById("noBtn");
+
+noBtn.addEventListener("mouseover", function () {
+
+    // Get screen limits
+    const maxX = window.innerWidth - noBtn.offsetWidth;
+    const maxY = window.innerHeight - noBtn.offsetHeight;
+
+    // Random position
+    const randomX = Math.random() * maxX;
+    const randomY = Math.random() * maxY;
+
+    // Move button
+    noBtn.style.position = "absolute";
+    noBtn.style.left = randomX + "px";
+    noBtn.style.top = randomY + "px";
+});
+</script>
+
 
 <body>
   <header>
@@ -13,8 +34,10 @@
 
     <h2>
       <input type="button" class="button yes" value="Yes">
-      <input type="button" class="button" value="No"
-        onclick="window.location.href='ReasonsToLoveMe.html'">
+      <input type="button"
+             class="button no"
+             value="No"
+             id="noBtn">
     </h2>
   </header>
 </body>
