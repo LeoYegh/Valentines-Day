@@ -20,7 +20,7 @@ h1 {
 
 .love-glow {
   text-align: center;
-  display: inline-block; 
+  display: block; 
   padding: 8px 18px;       
   border-radius: 12px;     
   color: white;
