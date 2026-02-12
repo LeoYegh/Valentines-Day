@@ -1,0 +1,33 @@
+header {
+  font-family: 'Bubblegum Sans', cursive;
+  text-align: center;
+}
+
+body {
+  background-color: pink;
+  background-image: url("images/RedHeart.png");
+}
+
+/* if you want the image to repeat or not */
+body {
+  background-repeat: repeat; /* or: no-repeat */
+  background-size: auto;     /* or: cover */
+}
+
+h1 {
+  color: white;
+}
+
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 64px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 32px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px; 
+}
