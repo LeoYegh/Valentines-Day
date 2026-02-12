@@ -123,3 +123,49 @@ h2 {
 .no {
   transition: 0.15s ease;
 }
+
+.section-title {
+  color: white;
+  margin-top: 30px;
+  font-size: 28px;
+  text-shadow: 0 0 10px #ff4d6d;
+}
+
+.reasons-list {
+  color: white;
+  font-size: 20px;
+  width: 60%;
+  margin: 20px auto;
+  text-align: left;
+  line-height: 1.8;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px 40px;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+}
+
+.reasons-list li {
+  margin-bottom: 10px;
+}
+
+.back-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.back-button {
+  background-color: #ff4d6d;
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.back-button:hover {
+  box-shadow: 0 0 20px #ff4d6d;
+  transform: scale(1.1);
+}
+
