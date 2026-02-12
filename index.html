@@ -17,7 +17,7 @@
              class="button no"
              value="No"
              id="noBtn"
-             onclick="window.location.href='ReasonToLove.html'">
+             onclick="window.location.href='ReasonsToLove.html'">
     </h2>
   </header>
   
@@ -52,21 +52,17 @@
   
   <script>
     const noBtn = document.getElementById("noBtn");
-    
-    noBtn.addEventListener("mouseover", function () {
-    
-        // Get screen limits
-        const maxX = window.innerWidth - noBtn.offsetWidth;
-        const maxY = window.innerHeight - noBtn.offsetHeight;
-    
-        // Random position
-        const randomX = Math.random() * maxX;
-        const randomY = Math.random() * maxY;
-    
-        // Move button
-        noBtn.style.position = "absolute";
-        noBtn.style.left = randomX + "px";
-        noBtn.style.top = randomY + "px";
+    noBtn.addEventListener("mouseenter", () => {
+      const padding = 20;
+      const maxX = window.innerWidth - noBtn.offsetWidth - padding;
+      const maxY = window.innerHeight - noBtn.offsetHeight - padding;
+
+      const randomX = padding + Math.random() * maxX;
+      const randomY = padding + Math.random() * maxY;
+
+      noBtn.style.position = "absolute";
+      noBtn.style.left = randomX + "px";
+      noBtn.style.top = randomY + "px";
     });
 </script>
 </body>
